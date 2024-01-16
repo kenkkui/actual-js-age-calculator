@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/inputs.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+
+<body>
+  <div id="card">
+
+      <div class="time-inputs">
+        <div class="day-wrapper">
+          <div class="alt">Day</div>
+          <input type="number" placeholder="DD" class="js-day-input input">
+          <div class="js-day-error error"></div>
+        </div>
+
+        <div class="month-wrapper">
+          <div class="alt">Month</div>
+          <input type="number" placeholder="MM" class="js-month-input input">
+          <div class="error js-month-error"></div>
+        </div>
+
+        <div class="year-wrapper">
+          <div class="alt">Year</div>
+          <input type="number" placeholder="YYYY" class="js-year-input input">
+          <div class="error js-year-error"></div>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <div class="middle-line">
+          <button class="go-button" onclick="calculate(), checkError()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+     
+
+      <div class="result">
+        <div>
+          <span class="js-year-output outputs">-- </span>years
+        </div>
+
+        <div>
+          <span class="js-month-output outputs">-- </span>months
+        </div>
+
+        <div>
+          <span class="js-day-output outputs">-- </span>days<span class="msg">considers leap years</span>
+        </div>
+      </div>
+
+
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Kenzo Bunyi</a>.
+      </div>
+
+      <div class="js-current-time current-time"></div>
+  </div>    
+  <script src="scripts/script.js"></script>
+</body>
+</html>
